@@ -1,0 +1,5 @@
+/Users/edward/desktop/test/file/COPYRIGHT
+/Users/edward/desktop/test/file/README
+/Users/edward/desktop/test/bin/runhello.sh
+/Users/edward/desktop/test/file/hello.txt
+/Users/edward/desktop/test/bin/hello

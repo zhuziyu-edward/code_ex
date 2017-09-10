@@ -1,0 +1,3 @@
+
+ADD_EXECUTABLE(hello main.cpp)
+INSTALL(TARGETS hello RUNTIME DESTINATION bin)
