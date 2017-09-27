@@ -84,7 +84,7 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 CMAKE_INSTALL_NAME_TOOL:FILEPATH=/usr/bin/install_name_tool
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=/Users/edward/desktop/test
+CMAKE_INSTALL_PREFIX:PATH=/Users/edward/desktop/test1
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
@@ -128,7 +128,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 CMAKE_OSX_SYSROOT:STRING=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=HELLO
+CMAKE_PROJECT_NAME:STATIC=data-structure
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -184,6 +184,15 @@ HELLO_BINARY_DIR:STATIC=/Users/edward/Downloads/computer_science/code_ex/cmake-t
 
 //Value Computed by CMake
 HELLO_SOURCE_DIR:STATIC=/Users/edward/Downloads/computer_science/code_ex/cmake-test
+
+//Dependencies for target
+btree_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+data-structure_BINARY_DIR:STATIC=/Users/edward/Downloads/computer_science/code_ex/cmake-test/build
+
+//Value Computed by CMake
+data-structure_SOURCE_DIR:STATIC=/Users/edward/Downloads/computer_science/code_ex/cmake-test
 
 
 ########################

@@ -1,13 +1,5 @@
-/Users/edward/Downloads/computer_science/code_ex/cmake-test/build/CMakeFiles/install/local.dir
-/Users/edward/Downloads/computer_science/code_ex/cmake-test/build/CMakeFiles/install/strip.dir
-/Users/edward/Downloads/computer_science/code_ex/cmake-test/build/CMakeFiles/install.dir
-/Users/edward/Downloads/computer_science/code_ex/cmake-test/build/CMakeFiles/list_install_components.dir
 /Users/edward/Downloads/computer_science/code_ex/cmake-test/build/CMakeFiles/rebuild_cache.dir
 /Users/edward/Downloads/computer_science/code_ex/cmake-test/build/CMakeFiles/edit_cache.dir
-/Users/edward/Downloads/computer_science/code_ex/cmake-test/build/bin/CMakeFiles/install/local.dir
 /Users/edward/Downloads/computer_science/code_ex/cmake-test/build/bin/CMakeFiles/rebuild_cache.dir
 /Users/edward/Downloads/computer_science/code_ex/cmake-test/build/bin/CMakeFiles/edit_cache.dir
-/Users/edward/Downloads/computer_science/code_ex/cmake-test/build/bin/CMakeFiles/install/strip.dir
-/Users/edward/Downloads/computer_science/code_ex/cmake-test/build/bin/CMakeFiles/install.dir
-/Users/edward/Downloads/computer_science/code_ex/cmake-test/build/bin/CMakeFiles/list_install_components.dir
-/Users/edward/Downloads/computer_science/code_ex/cmake-test/build/bin/CMakeFiles/hello.dir
+/Users/edward/Downloads/computer_science/code_ex/cmake-test/build/bin/CMakeFiles/run.dir

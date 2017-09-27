@@ -63,12 +63,12 @@ CMAKE_BINARY_DIR = /Users/edward/Downloads/computer_science/code_ex/cmake-test/b
 # Directory level rules for directory bin
 
 # Convenience name for "all" pass in the directory.
-bin/all: bin/CMakeFiles/hello.dir/all
+bin/all: bin/CMakeFiles/run.dir/all
 
 .PHONY : bin/all
 
 # Convenience name for "clean" pass in the directory.
-bin/clean: bin/CMakeFiles/hello.dir/clean
+bin/clean: bin/CMakeFiles/run.dir/clean
 
 .PHONY : bin/clean
 
@@ -78,39 +78,39 @@ bin/preinstall:
 .PHONY : bin/preinstall
 
 #=============================================================================
-# Target rules for target bin/CMakeFiles/hello.dir
+# Target rules for target bin/CMakeFiles/run.dir
 
 # All Build rule for target.
-bin/CMakeFiles/hello.dir/all:
-	$(MAKE) -f bin/CMakeFiles/hello.dir/build.make bin/CMakeFiles/hello.dir/depend
-	$(MAKE) -f bin/CMakeFiles/hello.dir/build.make bin/CMakeFiles/hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/edward/Downloads/computer_science/code_ex/cmake-test/build/CMakeFiles --progress-num=1,2 "Built target hello"
-.PHONY : bin/CMakeFiles/hello.dir/all
+bin/CMakeFiles/run.dir/all:
+	$(MAKE) -f bin/CMakeFiles/run.dir/build.make bin/CMakeFiles/run.dir/depend
+	$(MAKE) -f bin/CMakeFiles/run.dir/build.make bin/CMakeFiles/run.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/edward/Downloads/computer_science/code_ex/cmake-test/build/CMakeFiles --progress-num=1,2 "Built target run"
+.PHONY : bin/CMakeFiles/run.dir/all
 
 # Include target in all.
-all: bin/CMakeFiles/hello.dir/all
+all: bin/CMakeFiles/run.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-bin/CMakeFiles/hello.dir/rule: cmake_check_build_system
+bin/CMakeFiles/run.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/edward/Downloads/computer_science/code_ex/cmake-test/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 bin/CMakeFiles/hello.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 bin/CMakeFiles/run.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/edward/Downloads/computer_science/code_ex/cmake-test/build/CMakeFiles 0
-.PHONY : bin/CMakeFiles/hello.dir/rule
+.PHONY : bin/CMakeFiles/run.dir/rule
 
 # Convenience name for target.
-hello: bin/CMakeFiles/hello.dir/rule
+run: bin/CMakeFiles/run.dir/rule
 
-.PHONY : hello
-
-# clean rule for target.
-bin/CMakeFiles/hello.dir/clean:
-	$(MAKE) -f bin/CMakeFiles/hello.dir/build.make bin/CMakeFiles/hello.dir/clean
-.PHONY : bin/CMakeFiles/hello.dir/clean
+.PHONY : run
 
 # clean rule for target.
-clean: bin/CMakeFiles/hello.dir/clean
+bin/CMakeFiles/run.dir/clean:
+	$(MAKE) -f bin/CMakeFiles/run.dir/build.make bin/CMakeFiles/run.dir/clean
+.PHONY : bin/CMakeFiles/run.dir/clean
+
+# clean rule for target.
+clean: bin/CMakeFiles/run.dir/clean
 
 .PHONY : clean
 

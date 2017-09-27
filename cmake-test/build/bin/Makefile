@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/edward/Downloads/computer_science/code_ex/cmake-test/b
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/Cellar/cmake/3.7.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -88,39 +77,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/3.7.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/Cellar/cmake/3.7.2/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/Cellar/cmake/3.7.2/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -155,19 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-bin/CMakeFiles/hello.dir/rule:
-	cd /Users/edward/Downloads/computer_science/code_ex/cmake-test/build && $(MAKE) -f CMakeFiles/Makefile2 bin/CMakeFiles/hello.dir/rule
-.PHONY : bin/CMakeFiles/hello.dir/rule
+bin/CMakeFiles/run.dir/rule:
+	cd /Users/edward/Downloads/computer_science/code_ex/cmake-test/build && $(MAKE) -f CMakeFiles/Makefile2 bin/CMakeFiles/run.dir/rule
+.PHONY : bin/CMakeFiles/run.dir/rule
 
 # Convenience name for target.
-hello: bin/CMakeFiles/hello.dir/rule
+run: bin/CMakeFiles/run.dir/rule
 
-.PHONY : hello
+.PHONY : run
 
 # fast build rule for target.
-hello/fast:
-	cd /Users/edward/Downloads/computer_science/code_ex/cmake-test/build && $(MAKE) -f bin/CMakeFiles/hello.dir/build.make bin/CMakeFiles/hello.dir/build
-.PHONY : hello/fast
+run/fast:
+	cd /Users/edward/Downloads/computer_science/code_ex/cmake-test/build && $(MAKE) -f bin/CMakeFiles/run.dir/build.make bin/CMakeFiles/run.dir/build
+.PHONY : run/fast
 
 main.o: main.cpp.o
 
@@ -175,7 +131,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /Users/edward/Downloads/computer_science/code_ex/cmake-test/build && $(MAKE) -f bin/CMakeFiles/hello.dir/build.make bin/CMakeFiles/hello.dir/main.cpp.o
+	cd /Users/edward/Downloads/computer_science/code_ex/cmake-test/build && $(MAKE) -f bin/CMakeFiles/run.dir/build.make bin/CMakeFiles/run.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -184,7 +140,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /Users/edward/Downloads/computer_science/code_ex/cmake-test/build && $(MAKE) -f bin/CMakeFiles/hello.dir/build.make bin/CMakeFiles/hello.dir/main.cpp.i
+	cd /Users/edward/Downloads/computer_science/code_ex/cmake-test/build && $(MAKE) -f bin/CMakeFiles/run.dir/build.make bin/CMakeFiles/run.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -193,7 +149,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /Users/edward/Downloads/computer_science/code_ex/cmake-test/build && $(MAKE) -f bin/CMakeFiles/hello.dir/build.make bin/CMakeFiles/hello.dir/main.cpp.s
+	cd /Users/edward/Downloads/computer_science/code_ex/cmake-test/build && $(MAKE) -f bin/CMakeFiles/run.dir/build.make bin/CMakeFiles/run.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -202,13 +158,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... install/strip"
-	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... hello"
+	@echo "... run"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

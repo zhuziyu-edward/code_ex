@@ -1,3 +1,5 @@
-
-ADD_EXECUTABLE(hello main.cpp)
-INSTALL(TARGETS hello RUNTIME DESTINATION bin)
+INCLUDE_DIRECTORIES(/Users/edward/Downloads/computer_science/code_ex/cmake-test/src)
+LINK_DIRECTORIES("/Users/edward/Downloads/computer_science/code_ex/cmake-test/build/bin")
+ADD_EXECUTABLE(run main.cpp )
+TARGET_LINK_LIBRARIES(run libbtree.a)
+#INSTALL(TARGETS hello RUNTIME DESTINATION bin)

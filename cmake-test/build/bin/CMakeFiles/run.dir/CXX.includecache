@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/edward/Downloads/computer_science/code_ex/cmake-test/src/btree.hpp
+stdio.h
+-
+
+/Users/edward/Downloads/computer_science/code_ex/cmake-test/src/main.cpp
+iostream
+-
+fstream
+-
+btree.hpp
+/Users/edward/Downloads/computer_science/code_ex/cmake-test/src/btree.hpp
+

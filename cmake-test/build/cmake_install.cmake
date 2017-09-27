@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/edward/desktop/test")
+  set(CMAKE_INSTALL_PREFIX "/Users/edward/desktop/test1")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -25,21 +25,6 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   else()
     set(CMAKE_INSTALL_COMPONENT)
   endif()
-endif()
-
-if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/file" TYPE FILE FILES
-    "/Users/edward/Downloads/computer_science/code_ex/cmake-test/COPYRIGHT"
-    "/Users/edward/Downloads/computer_science/code_ex/cmake-test/README"
-    )
-endif()
-
-if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/Users/edward/Downloads/computer_science/code_ex/cmake-test/runhello.sh")
-endif()
-
-if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/file" TYPE DIRECTORY FILES "/Users/edward/Downloads/computer_science/code_ex/cmake-test/doc/")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

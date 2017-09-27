@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/run.dir/main.cpp.o  -o run  -L/Users/edward/Downloads/computer_science/code_ex/cmake-test/build/bin -Wl,-rpath,/Users/edward/Downloads/computer_science/code_ex/cmake-test/build/bin -lbtree 
