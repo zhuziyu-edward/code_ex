@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.7)                                              
+PROJECT(data-structure)  
+ADD_LIBRARY(lib tree.c algorithm.c)
+ADD_EXECUTABLE(run main.c)
+TARGET_LINK_LIBRARIES(run lib)

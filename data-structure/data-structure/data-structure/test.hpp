@@ -10,5 +10,5 @@
 #define test_hpp
 
 #include <stdio.h>
-
+void pour(int*** grid, int row, int column, int rowMax, int columnMax);
 #endif /* test_hpp */

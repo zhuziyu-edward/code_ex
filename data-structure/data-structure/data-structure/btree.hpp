@@ -28,7 +28,6 @@ public:
     void perOrder(Node* root);
     void inOrder(Node* root);
     void postOrder(Node* root);
-
 };
 
 #endif /* btree_hpp */

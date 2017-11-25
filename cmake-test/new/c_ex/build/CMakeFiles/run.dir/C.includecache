@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/edward/downloads/computer_science/code_ex/cmake-test/new/c_ex/algorithm.h
+stdio.h
+-
+
+/Users/edward/downloads/computer_science/code_ex/cmake-test/new/c_ex/main.c
+stdio.h
+-
+algorithm.h
+/Users/edward/downloads/computer_science/code_ex/cmake-test/new/c_ex/algorithm.h
+tree.h
+/Users/edward/downloads/computer_science/code_ex/cmake-test/new/c_ex/tree.h
+time.h
+-
+
+/Users/edward/downloads/computer_science/code_ex/cmake-test/new/c_ex/tree.h
+stdlib.h
+-
+stdio.h
+-
+

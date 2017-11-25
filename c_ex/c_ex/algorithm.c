@@ -31,3 +31,4 @@ void hano(int num, int posStart,int posMid, int posEnd)
         hano(num-1, posMid, posStart, posEnd);
     }
 }
+

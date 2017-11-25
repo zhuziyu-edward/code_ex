@@ -1,0 +1,4 @@
+/Users/edward/downloads/computer_science/code_ex/cmake-test/new/c_ex/build/CMakeFiles/rebuild_cache.dir
+/Users/edward/downloads/computer_science/code_ex/cmake-test/new/c_ex/build/CMakeFiles/edit_cache.dir
+/Users/edward/downloads/computer_science/code_ex/cmake-test/new/c_ex/build/CMakeFiles/run.dir
+/Users/edward/downloads/computer_science/code_ex/cmake-test/new/c_ex/build/CMakeFiles/lib.dir
